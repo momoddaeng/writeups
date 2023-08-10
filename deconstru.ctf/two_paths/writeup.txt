@@ -2,8 +2,7 @@ This is my first ctf writeup that I successfully captured courtesy of deconstru.
 
 TwoPaths (Forensics: Easy)
 
-![image1](https://raw.githubusercontent.com/momoddaeng/writeups/main/deconstru.ctf/two_paths/Challenge.png)
-<img src="https://raw.githubusercontent.com/momoddaeng/writeups/main/deconstru.ctf/two_paths/Challenge.png" alt="image1">
+<img src="https://raw.githubusercontent.com/momoddaeng/writeups/main/deconstru.ctf/two_paths/Challenge.png" alt="image1" title="Question">
 
 This challenge is a mixture of image + audio stenography and cryptography.
 
