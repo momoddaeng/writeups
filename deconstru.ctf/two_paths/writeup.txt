@@ -1,0 +1,72 @@
+This is my first ctf writeup that I successfully captured courtesy of deconstru.ctf
+
+TwoPaths (Forensics: Easy)
+
+
+
+This challenge is a mixture of image + audio stenography and cryptography.
+
+Upon downloading the file, the image looks like this:
+
+
+
+In my Kali Machine, what I did first was to check via binwalk to see if the image contains any extractable files.
+
+
+
+It turns out there are two files hidden inside this image!
+
+These are the images that I have extracted:
+
+
+So what I did is that I repeated the process that I did previously to extract any hidden files from these images. I started to go for the greenpill.jpg first
+
+
+
+There's another image withing greenpill.jpg
+
+
+
+How fun lol.
+
+
+Since the flag that we are looking for is not in the greenpill.jpg, now I went for redpill.jpg. Upon checking, the hidden files look more interesting.
+
+
+
+The extracted files are morse.wav and secrett.zip.
+
+
+
+Upon extracting secrett.zip, it prompted to provide a password.
+
+
+
+From here, I assumed that the password might have to be obtained from another file, which is from morse.wav, which is of course, an audio containing morse code.
+
+I uploaded the .wav file to a morse code decryptor and here's what i got:
+
+
+
+At first, I thought the decoded string was the password itself, turns out I need to do a little bit more searching :D
+
+
+
+Few more attempts have been tried, quite case sensitive, and then I got the password right, which is "nebuchadnezzar".
+
+
+Finally got the file. Another sound file!
+
+I took some time to try and test a few tools regarding audio stagnography, and the tool that helped me is "DeepSound" which can pull out hidden files out of audio files. The catch here is that DeepSound is only compatible for Windows (afaik) so I installed used the tool on my Windows Sandbox.
+
+And voila, another hidden file uncovered!
+
+
+
+So I extracted the hidden file and went to the path where it was saved via Output Directory location.
+
+Aaaand we finally got the flag.
+
+
+
+dsc{u_ch053_THE_cOrr3Ct_pill!}
