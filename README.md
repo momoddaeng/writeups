@@ -2,7 +2,7 @@
 
 This is my first ctf writeup that I successfully captured courtesy of deconstru.ctf
 
-TwoPaths (Forensics: Easy)
+**TwoPaths (Forensics: Easy)**
 
 ![Challenge](https://github.com/momoddaeng/writeups/assets/95261836/ff0f170b-3f48-45d2-9f54-8445bafaee71)
 
